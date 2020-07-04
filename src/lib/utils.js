@@ -34,7 +34,6 @@ const getWeatherByCity = async (type, cityName) => {
     switch (type) {
         case constants.CURRENT_TYPE:
             options.uri = `${constants.OPEN_WEATHER_API_DAY}q=${cityName}&appid=${constants.OPEN_WEATHER_KEY}`;
-            
         break;
         case constants.FORECAST_TYPE:
             options.url = `${constants.OPEN_WEATHER_API_FORECAST}q=${cityName}&appid=${constants.OPEN_WEATHER_KEY}`;
