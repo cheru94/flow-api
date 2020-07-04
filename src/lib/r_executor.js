@@ -1,6 +1,5 @@
 const request = require('request');
 
-
 const getExecution = async (options) => {
     try {
         return await executor(options);
@@ -9,8 +8,7 @@ const getExecution = async (options) => {
     }
 };
 
-
-const executor = (options) => {
+const executor = async (options) => {
     return new Promise((resolve, reject) => {
         request(options, (error, response,body) => {
             if(!error && response.statusCode === 200) {

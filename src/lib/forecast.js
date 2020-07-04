@@ -17,7 +17,6 @@ exports.handler = async (request) => {
             return await utils.getWeatherByCoordinates(constants.FORECAST_TYPE, lat, lon);
         }
     } catch(error) {
-        console.log(error);
         return error;
     }
 };
