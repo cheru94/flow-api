@@ -1,4 +1,4 @@
-const utils = require('./utils');
+const utils = require('./lib/utils');
 
 exports.handler = async () => {
     const publicIp = await utils.getIp();

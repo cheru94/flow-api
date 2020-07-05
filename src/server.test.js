@@ -2,7 +2,6 @@ const mocha = require ('mocha');
 const request = require('supertest');
 
 const server = 'http://localhost:3000';
-const app = require('./server');
 
 const chai = require('chai');
 const expect = chai.expect;
