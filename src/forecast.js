@@ -1,5 +1,5 @@
-const utils = require('./utils');
-const constants = require('./constants');
+const utils = require('./lib/utils');
+const constants = require('./lib/constants');
 
 exports.handler = async (request) => {
     const params = request.params;

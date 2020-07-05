@@ -1,7 +1,7 @@
 const express = require ('express');
-const location = require('./lib/location');
-const current = require('./lib/current');
-const foreCast = require('./lib/forecast');
+const location = require('./location');
+const current = require('./current');
+const foreCast = require('./forecast');
 
 const app = require('./app').app;
 
