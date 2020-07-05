@@ -53,16 +53,16 @@ If the installation was successful, you should be able to run the following comm
   
   - Returns a message
 
-  ## /location
+  ## /v1/location
 
   - Returns the data of the city location from ip-api
 
 
-  ## /current[/city]
+  ## /v1/current[/city]
 
   - city is an optional parameter. Returns the city data or the actual location from ip-api and the actual weather
 
-  ## /forecast[/city]
+  ## /v1/forecast[/city]
   
   - city is an optional parameter. Returns the city data or the actual location from ip-api and the forecast weather up to 5 days 
 
