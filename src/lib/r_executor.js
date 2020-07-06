@@ -1,5 +1,9 @@
 const request = require('request');
 
+/**
+ * @param {Object} options Object with the properties for the request
+ * @returns Returns a promise with the resolvement of the request or the failure
+ */
 const getExecution = async (options) => {
     try {
         return await executor(options);
@@ -8,6 +12,11 @@ const getExecution = async (options) => {
     }
 };
 
+/**
+ * 
+ * @param {Object} options 
+ * @returns Returns a promise with the resolvement of the request or the failure
+ */
 const executor = async (options) => {
     return new Promise((resolve, reject) => {
         request(options, (error, response,body) => {

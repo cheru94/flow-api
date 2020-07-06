@@ -11,9 +11,7 @@ describe('Forecast Unit Test', () => {
     beforeEach(() => {
         stubForecastResponse = stub.common;
         stubForecastLaResponse = stub.la;
-
-        
-       forecastStub = sinon.stub(forecast, 'handler');
+        forecastStub = sinon.stub(forecast, 'handler');
     });
 
     afterEach(() => {
