@@ -5,7 +5,6 @@ const executor = require('./r_executor');
 let url;
 
 const getIp = async() => {
-    console.log(await myIp.v4());
     return  await myIp.v4();
 };
 
