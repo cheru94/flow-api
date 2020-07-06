@@ -1,7 +1,7 @@
 {
   "name": "flow-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "RESTful API to get weather information",
   "main": "src/server.js",
   "dependencies": {
     "body-parser": "^1.19.0",

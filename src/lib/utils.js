@@ -5,24 +5,23 @@ const executor = require('./r_executor');
 let url;
 
 const getIp = async() => {
+    console.log(await myIp.v4());
     return  await myIp.v4();
 };
 
 /**
- * 
- * @param {String} publicIp 
+ * @param {String} publicIp The public ip of the client to be search for
+ * @returns Returns the response in JSON format from ip-api
  */
 const ipApiData = async (publicIp) => {
-    const myIp = getIp();
-    url = `http://ip-api.com/json/${publicIp}`;
-    let responseIpApi = await executor.getExecution(url);
+    let responseIpApi = await executor.getExecution(`${constants.IP_API_BASE_URL}${publicIp}`);
     return JSON.parse(responseIpApi);
 };
 
 /**
- * 
- * @param {String} type 
- * @param {string} cityName 
+ * @param {String} type Type of search to be done
+ * @param {string} cityName City name to be search for
+ * @returns Returns the JSON response from openWeatherAPI
  */
 const getWeatherByCity = async (type, cityName) => {
     switch (type) {
@@ -40,9 +39,10 @@ const getWeatherByCity = async (type, cityName) => {
 };
 
 /**
- * 
- * @param {*} lat 
- * @param {*} lon 
+ * @param {String} type Type of search to be done
+ * @param {*} lat Latitude
+ * @param {*} lon Longitude
+ * @returns Returns the JSON response from openWeatherAPI
  */
 const getWeatherByCoordinates = async (type, lat, lon) => {
     switch (type) {

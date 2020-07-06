@@ -45,7 +45,6 @@ app.get('/v1/current', (request, response) => {
     });
 });
 
-
 app.get('/v1/forecast', (request, response) => {
     
     let event = {

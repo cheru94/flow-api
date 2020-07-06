@@ -1,6 +1,10 @@
 const utils = require('./lib/utils');
 const constants = require('./lib/constants');
 
+/**
+ * @param {Object} request
+ * @returns Returns the forecast weather from openWeatherAPI
+ */
 exports.handler = async (request) => {
     const params = request.params;
     try {

@@ -42,6 +42,7 @@ describe('Integration Test', () => {
             });
         });
     });
+
     describe('Location Endpoint Test', () => {
         it('GET /v1/location', (done) => {
             request(server)
@@ -68,6 +69,7 @@ describe('Integration Test', () => {
             });
         });
     });
+
     describe('Current Endpoint Test', () => {
         it('GET /v1/current', (done) => {
             request(server)
